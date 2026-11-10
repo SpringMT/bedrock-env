@@ -24,7 +24,8 @@ SSO プロファイルでは通常、後者で失効します。ロールの認�
 ## インストール
 
 ```sh
-uv tool install git+https://github.com/<owner>/bedrock-env
+uv tool install bedrock-env
+# または: pipx install bedrock-env
 ```
 
 Python 3.10 以上、macOS / Linux で動作します。

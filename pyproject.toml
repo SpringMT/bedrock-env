@@ -20,6 +20,11 @@ dependencies = [
     "botocore>=1.43.116",
 ]
 
+[project.urls]
+Homepage = "https://github.com/SpringMT/bedrock-short-time-key"
+Repository = "https://github.com/SpringMT/bedrock-short-time-key"
+Issues = "https://github.com/SpringMT/bedrock-short-time-key/issues"
+
 [project.scripts]
 bedrock-env = "bedrock_env.cli:main"
 
