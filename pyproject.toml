@@ -1,0 +1,33 @@
+[project]
+name = "bedrock-env"
+version = "0.1.0"
+description = "Generate Amazon Bedrock short-term API keys from AWS SSO and keep running processes supplied with fresh ones"
+readme = "README.md"
+authors = [{ name = "Spring_MT" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+keywords = ["aws", "bedrock", "sso", "api-key", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "aws-bedrock-token-generator>=1.1.0",
+    "botocore>=1.43.116",
+]
+
+[project.scripts]
+bedrock-env = "bedrock_env.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
