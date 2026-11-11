@@ -2,7 +2,7 @@
 
 Generate [Amazon Bedrock short-term API keys](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html) from your AWS SSO profile, and keep long-running processes (dev servers, agents, ...) supplied with a fresh key.
 
-[日本語](https://github.com/SpringMT/bedrock-short-time-key/blob/main/README.ja.md)
+[日本語](https://github.com/SpringMT/bedrock-env/blob/main/README.ja.md)
 
 ```sh
 # One-off: set AWS_BEARER_TOKEN_BEDROCK in the current shell
